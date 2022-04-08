@@ -491,8 +491,20 @@ img {
   transform: rotate(-180deg);
 }
 
-/*==================== QUALIFICATION ====================*/
+.skill__title{
+  padding: 10px 5px 0 5px;
+  text-align: center;
+  background-color: rgb(216, 216, 216);
+  width: 90px;
+  height: 90px;
+  border-radius: .35rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+  transition: .3s;
+}
 
+.skill__logo{
+  height: 70px;
+}
 
 /*==================== SERVICES ====================*/
 .services__container{
