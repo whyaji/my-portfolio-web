@@ -4,8 +4,8 @@
 
 This repository is an assignment for a web programming course at Informatics Engineering, University of Muhammadiyah Malang
 
-Name    : Wahyu Patriaji
-NIM     : 202010370311197
+Name    : Wahyu Patriaji  
+NIM     : 202010370311197  
 Class   : Pemrograman Web G
 
 This repo contains an easy-to-customize personal web portfolio that was created with HTML, CSS, and JavaScript. It is lightweight and fully responsive, as well as comes with unicons icons, grid system, and loaded with Font Poppins. The site was built as modular as possible to make it easy to shift around styles and content.
