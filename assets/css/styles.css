@@ -141,7 +141,7 @@ img {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
-  padding: 2rem 0 4rem;
+  padding: 4rem 0 2rem;
 }
 
 .section__title {
@@ -221,7 +221,7 @@ img {
     left: 0;
     width: 100%;
     background-color: var(--body-color);
-    padding: 2rem 1.5rem 4rem;
+    padding: 2rem 1.5rem 2rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: .3s;
@@ -229,6 +229,9 @@ img {
   .nav__link-item{
     width: 8rem;
     margin: auto;
+  }
+  .nav__icon{
+    font-size: 3rem;
   }
 }
 
@@ -954,6 +957,7 @@ img {
   }
   .home__scroll{
     display: block;
+    padding-bottom: 2rem;
   }
   .home__scroll-button{
     margin-left: 3rem;
