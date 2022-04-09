@@ -36,6 +36,7 @@ const skillsContent = document.getElementsByClassName('skills__content'),
 function toggleSkills(){
     let itemClass = this.parentNode.className
 
+    /* only one skill open */
     // for (i = 0; i < skillsContent.length; i++) {
     //     skillsContent[i].className = 'skills__content skills__close'
     // }
@@ -49,10 +50,6 @@ function toggleSkills(){
 skillsHeader.forEach((el) => {
     el.addEventListener('click', toggleSkills)
 })
-
-
-/*==================== QUALIFICATION TABS ====================*/
-
 
 /*==================== SERVICES MODAL ====================*/
 const modalViews = document.querySelectorAll('.services__modal'),
@@ -76,12 +73,6 @@ modalCloses.forEach((modalClose) =>{
         })
     })
 })
-
-/*==================== PORTFOLIO SWIPER  ====================*/
-
-
-/*==================== TESTIMONIAL ====================*/
-
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
