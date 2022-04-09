@@ -6,7 +6,7 @@
     --header-height: 3rem;
 
     /*========== Colors ==========*/
-    /* Change favorite color */
+    /* Change color */
     --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
@@ -160,6 +160,10 @@ img {
   text-align: center;
 }
 
+.icon__web{
+  fill: green;
+}
+
 /*==================== LAYOUT ====================*/
 .container {
   max-width: 768px;
@@ -175,7 +179,7 @@ img {
 .header {
   width: 100%;
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
@@ -213,7 +217,7 @@ img {
 @media screen and (max-width: 767px){
   .nav__menu{
     position: fixed;
-    bottom: -100%;
+    top: -100%;
     left: 0;
     width: 100%;
     background-color: var(--body-color);
@@ -222,17 +226,17 @@ img {
     border-radius: 1.5rem 1.5rem 0 0;
     transition: .3s;
   }
+  .nav__link-item{
+    width: 8rem;
+    margin: auto;
+  }
 }
 
 .nav__list{
-  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
 .nav__link{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-size: var(--small-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
@@ -249,7 +253,7 @@ img {
 .nav__close{
   position: absolute;
   right: 1.3rem;
-  bottom: .5rem;
+  top: .5rem;
   font-size: 1.5rem;
   cursor: pointer;
   color: var(--first-color);
@@ -261,7 +265,7 @@ img {
 
 /* show menu */
 .show-menu{
-  bottom: 0;
+  top: 0;
 }
 
 /* Active link */
@@ -493,6 +497,12 @@ img {
   transform: rotate(-180deg);
 }
 
+.skills__info{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2-5);
+}
+
 .skill__title{
   padding: 10px 5px 0 5px;
   text-align: center;
@@ -666,8 +676,6 @@ img {
   justify-self: center;
 }
 
-/*==================== TESTIMONIAL ====================*/
-
 
 /*==================== CONTACT ME ====================*/
 .contact__container{
@@ -818,7 +826,7 @@ img {
 }
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px){
+@media screen and (max-width: 400px){
   .container{
     margin-left: auto;
     margin-right: auto;
@@ -840,6 +848,14 @@ img {
 
   .skills__title{
     font-size: var(--normal-font-size);
+  }
+  .skill__title{
+    padding: 7px 0 2px 2px;
+    width: 75px;
+    height: 75px;
+  }
+  .skill__logo{
+    height: 60px;
   }
   .services__container{
     grid-template-columns: max-content;
@@ -897,7 +913,6 @@ img {
   }
 
   .header{
-    top: 0;
     bottom: initial;
   }
   .header,
